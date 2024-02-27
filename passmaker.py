@@ -130,7 +130,7 @@ class passmaker():
                             resultlist = templist
                             templist = []
                     else:
-                        raise Exception("No \"{0}\" found, Please check your config!".format(i))
+                        raise Exception("No \"{0}\" found, Please check your config!".format(item))
 
             except Exception as e:
                 print(e)
