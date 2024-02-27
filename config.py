@@ -12,11 +12,10 @@ keyboard_walk = open('./seed/4_keyboard_walk.txt').readlines()
 common_number = open('./seed/common_number.txt').readlines()
 chinese_last_name = open('./seed/Chinese_last_name_top100.txt').readlines()
 common_english_name = open('./seed/english_name.txt').readlines()
-number = open('./seed/number.txt').readlines()
 
 # 第二步，定义密码的组成规则，这里用到的seed字段，都必须在第一步中定义好，而且是字典类型
 # rule_list = ["domain+special_letter+year","domain+special_letter+keyboard_walk","domain+special_letter+common_number","domain+year","topic+special_letter+year","topic+special_letter+keyboard_walk","topic+special_letter+common_number","topic+year"]
-rule_list = ["domain+number", "domain+year", "domain+special_letter+year"]
+rule_list = ["domain+common_number", "domain+year", "domain+special_letter+year"]
 keep_in_order = True  # 以上的规则，是否保持原顺序，如果为False 将对每个规则中的seed进行排列组合后生产密码。
 
 
