@@ -69,7 +69,7 @@ def config2Paras():
     paras.kinds_needed = config.kinds_needed  # 四者包含其三
 
 class passmaker():
-    def __init__(self,isinteractive= False,isGUI = True, output_file= None):
+    def __init__(self,isinteractive= False, output_file= None):
         self.logger = logger()
         self.output_file = output_file
 
@@ -267,8 +267,6 @@ if __name__ == "__main__":
         filename = passmaker().run()
         if filename:
             logger().info("Password file: {0}".format(os.path.join(os.getcwd(), filename)))
-    elif args.gui:
-        GUI.GUI()
     else:
         config2Paras()
         filename = passmaker().run()
