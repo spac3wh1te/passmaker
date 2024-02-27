@@ -44,7 +44,7 @@ leet_rule = leet2num #这个配置参数会被用于程序中，上面leet2num�
 
 
 #第四步，将一些常规的，可直接使用的密码字典合入最终的文件中。
-additional_list = ["weak_pass_chinese.txt","weak_pass_top100.txt"]
+additional_list = []
 
 #最后一步，根据以下密码规则约束，对以上生成的密码进行过滤处理，删除不满足条件的
 #大写字母、小写字母、特殊符号、数字,四种包含三种---常见的密码要求
