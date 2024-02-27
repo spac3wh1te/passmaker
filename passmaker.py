@@ -233,8 +233,8 @@ class passmaker():
         self.logger.info("Adding common weak password to result ...")
         tmplist = []
         for item in paras.additional_list:
-            if os.path.isfile(item):
-                fp = open(item,"r")
+            if os.path.isfile("./dict/"+item):
+                fp = open("./dict/"+item,"r")
                 for it in fp.readlines():
                     tmplist.append(it.strip("\n").strip("\r"))
                 self.write_add(filename,tmplist)
