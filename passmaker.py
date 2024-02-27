@@ -138,6 +138,7 @@ class passmaker():
                 exit(0)
             #begin write file
             self.write_add(filename,resultlist)
+            self.write_add(filename,"\n")
             resultlist = [] #每个规则处理完后要清空这个list
         return filename
 

@@ -21,7 +21,7 @@ keep_in_order = True #以上的规则，是否保持原顺序，如果为False �
 
 
 #第三步，对以上生成的密码再进行一些变形处理，变形后的密码不会覆盖之前的记录，而是新增一条。
-capitalize = False  #是否进行首字母大写处理
+capitalize = True  #是否进行首字母大写处理
 leet = False       #是否进行变形处理
 leet2num = {"a":"4",
             "i":"1",
